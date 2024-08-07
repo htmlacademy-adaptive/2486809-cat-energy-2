@@ -45,8 +45,9 @@
           Занялся собой? Займись котом!
         </p>
         <picture>
-          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/">
-          <img class="hero__image" src="../source/images/index-can-mobile-1.png" width="280" height="270" alt="Продукт Кэт энерджи со вкусом курицы">
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/index-can-desktop@1x.png 1x, images/desktop/index-can-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/tablet/index-can-tablet@1x.png 1x, images/tablet/index-can-tablet@2x 2x">
+          <img class="hero__image" src="../source/images/mobile/index-can-mobile@1x.png" srcset="images/mobile/index-can-mobile@2x.png 2x" width="280" height="270" alt="Продукт Кэт энерджи со вкусом курицы">
         </picture>
         <a class="hero__link" href="#">
           Подобрать программу
@@ -142,9 +143,18 @@
             <span class="experience-list__cost">15 000 РУБ.</span>
           </li>
         </ul>
-        <div class="experience__demo demo">
-          <img class="demo__img" src="../source/images/big-cat-for-slider.png" width="280" height="256" alt="Кот на массе">
-          <div class="demo__slider"></div>
+        <div class="experience__slider slider">
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-fat-tablet@1x.png 1x, images/tablet/cat-fat-tablet@2x.png 2x">
+            <img class="slider__img" src="../source/images/mobile/cat-fat-mobile@1x.png" width="280" height="256" alt="Фото до: Кот на массе">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-small-tablet@1x.png 1x, images/tablet/cat-small-tablet@2x.png 2x">
+            <img class="slider__img" src="../source/images/mobile/cat-small-mobile@1x.png" width="280" height="256" alt="Фото после: Худой код">
+          </picture>
+          <button class="slider__button" type="button">
+            <span class="vissually-hidden">Передвинуть ползунок</span>
+          </button>
         </div>
       </div>
     </section>
@@ -155,11 +165,17 @@
           <p class="adress__street">ул. Большая Конюшенная, д. 19/8</p>
           <p class="adress__city">Санкт-Петербург</p>
         </div>
+        <div class="map">
+          <picture>
+            <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/desktop/location-desktop@1x.png 1x, images/desktop/location-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/tablet/location-tablet@1x.png 1x, images/tablet/location-tablet@2x.png 2x">
+            <img class="map__img" src="../source/images/mobile/location-mobile@1x.png" alt="Карта офиса" width="768" height="400">
+          </picture>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <img class="invitation__map map" src="../source/images/Map.png" alt="Карта" width="768" height="400">
     <div class="container">
       <a class="footer__logo" href="#">
         <img class="footer__logo-img" src="../source/images/footer-logo.svg" alt="logo" width="128" height="24">
