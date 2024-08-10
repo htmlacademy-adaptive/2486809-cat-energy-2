@@ -6,6 +6,10 @@
   <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicons.ico"><!-- 32x32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png"><!-- 180x180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -41,7 +45,11 @@
 
           <!-- Курица 500грамм -->
           <li class="catalog-list__item">
-            <img class="card__img" src="../source/images/catalog-product/chicken-500g(68x86).png" alt="Кэт Энерджи 500грамм со вкусом курицы" width="68" height="86">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/catalog-desktop/chicken-500g-desktop@1x.png 1x, image/desktop/catalog-desktop/chicken-500g-desktop@2x.png 2x">
+              <source width="200" height="210" type="images/tablet/catalog-desktop/chicken-500g-tablet@1x.png 1x, image/tablet/catalog-desktop/chicken-500g-tablet@2x.png 2x">
+              <img class="card__img" src="images/mobile/catalog-mobile/chicken-500g-mobile@1x.png" srcset="images/mobile/catalog-mobile/chicken-500g-mobile@2x.png 2x" alt=" Кэт Энерджи 500грамм со вкусом курицы" width="140" height="107">
+            </picture>
             <div class="card__content">
               <h3 class="card__title">Cat Energy <br>PRO 500 г</h3>
               <ul class="card__list">
@@ -64,7 +72,11 @@
 
           <!-- Курица 1000грамм -->
           <li class="catalog-list__item">
-            <img class="card__img" src="../source/images/catalog-product/chicken-1000g(86x100).png" alt="Кэт Энерджи 1000грамм со вкусом курицы" width="86" height="100">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/catalog-desktop/chicken-1000g-desktop@1x.png 1x, image/desktop/catalog-desktop/chicken-1000g-desktop@2x.png 2x">
+              <source width="200" height="210" type="images/tablet/catalog-desktop/chicken-1000g-tablet@1x.png 1x, image/tablet/catalog-desktop/chicken-1000g-tablet@2x.png 2x">
+              <img class="card__img" src="images/mobile/catalog-mobile/chicken-1000g-mobile@1x.png" srcset="images/mobile/catalog-mobile/chicken-1000g-mobile@2x.png 2x" alt=" Кэт Энерджи 1000грамм со вкусом курицы" width="140" height="107">
+            </picture>
             <div class="card__content">
               <h3 class="card__title">Cat Energy <br>PRO 1000 г</h3>
               <ul class="card__list">
@@ -87,7 +99,11 @@
 
           <!-- Рыба 500грамм -->
           <li class="catalog-list__item">
-            <img class="card__img" src="../source/images/catalog-product/fish-500g(76x41).png" alt="Кэт Энерджи 500грамм со вкусом рыбы" width="76" height="41">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/catalog-desktop/fish-500g-desktop@1x.png 1x, image/desktop/catalog-desktop/fish-500g-desktop@2x.png 2x">
+              <source width="200" height="210" type="images/tablet/catalog-desktop/fish-500g-tablet@1x.png 1x, image/tablet/catalog-desktop/fish-500g-tablet@2x.png 2x">
+              <img class="card__img" src="images/mobile/catalog-mobile/fish-500g-mobile@1x.png" srcset="images/mobile/catalog-mobile/fish-500g-mobile@2x.png 2x" alt=" Кэт Энерджи 500грамм со вкусом рыбы" width="140" height="107">
+            </picture>
             <div class="card__content">
               <h3 class="card__title">Cat Energy <br>PRO 500 г</h3>
               <ul class="card__list">
@@ -110,7 +126,11 @@
 
           <!-- Рыба 1000грамм -->
           <li class="catalog-list__item">
-            <img class="card__img" src="../source/images/catalog-product/fish-1000g(84x100).png" alt="Кэт Энерджи 1000грамм со вкусом рыбы" width="84" height="100">
+            <picture>
+              <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/catalog-desktop/fish-1000g-desktop@1x.png 1x, image/desktop/catalog-desktop/fish-1000g-desktop@2x.png 2x">
+              <source width="200" height="210" type="images/tablet/catalog-desktop/fish-1000g-tablet@1x.png 1x, image/tablet/catalog-desktop/fish-1000g-tablet@2x.png 2x">
+              <img class="card__img" src="images/mobile/catalog-mobile/fish-1000g-mobile@1x.png" srcset="images/mobile/catalog-mobile/fish-1000g-mobile@2x.png 2x" alt=" Кэт Энерджи 1000грамм со вкусом рыбы" width="140" height="107">
+            </picture>
             <div class="card__content">
               <h3 class="card__title">Cat Energy <br>PRO 1000 г</h3>
               <ul class="card__list">
@@ -133,7 +153,9 @@
 
           <!-- Гречка 500грамм -->
           <li class="catalog-list__item">
-            <img class="card__img" src="../source/images/catalog-product/buckwheat-500g(68x78).png" alt="Кэт Энерджи 500грамм со вкусом гречки" width="68" height="86">
+            <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/catalog-desktop/buckweat-500g-desktop@1x.png 1x, image/desktop/catalog-desktop/buckweat-500g-desktop@2x.png 2x">
+            <source width="200" height="210" type="images/tablet/catalog-desktop/buckweat-500g-tablet@1x.png 1x, image/tablet/catalog-desktop/buckweat-500g-tablet@2x.png 2x">
+            <img class="card__img" src="images/mobile/catalog-mobile/buckweat-500g-mobile@1x.png" srcset="images/mobile/catalog-mobile/buckweat-500g-mobile@2x.png 2x" alt=" Кэт Энерджи 500грамм со вкусом гречки" width="140" height="107">
             <div class="card__content">
               <h3 class="card__title">Cat Energy <br>SLIM 500 г</h3>
               <ul class="card__list">
@@ -156,7 +178,9 @@
 
           <!-- Гречка 1000грамм -->
           <li class="catalog-list__item">
-            <img class="card__img" src="../source/images/catalog-product/buckwheat-1000g(84x100).png" alt="Кэт Энерджи 1000грамм со вкусом гречки" width="84" height="100">
+            <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/catalog-desktop/buckweat-1000g-desktop@1x.png 1x, image/desktop/catalog-desktop/buckweat-1000g-desktop@2x.png 2x">
+            <source width="200" height="210" type="images/tablet/catalog-desktop/buckweat-1000g-tablet@1x.png 1x, image/tablet/catalog-desktop/buckweat-1000g-tablet@2x.png 2x">
+            <img class="card__img" src="images/mobile/catalog-mobile/buckweat-1000g-mobile@1x.png" srcset="images/mobile/catalog-mobile/buckweat-1000g-mobile@2x.png 2x" alt=" Кэт Энерджи 1000грамм со вкусом гречки" width="140" height="107">
             <div class="card__content">
               <h3 class="card__title">Cat Energy <br>SLIM 1000 г</h3>
               <ul class="card__list">
@@ -179,7 +203,9 @@
 
           <!-- Рис 500грамм -->
           <li class="catalog-list__item">
-            <img class="card__img" src="../source/images/catalog-product/fish-500g(76x41).png" alt="Кэт Энерджи 1000грамм со вкусом риса" width="76" height="41">
+            <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/catalog-desktop/rice-500g-desktop@1x.png 1x, image/desktop/catalog-desktop/rice-500g-desktop@2x.png 2x">
+            <source width="200" height="210" type="images/tablet/catalog-desktop/rice-500g-tablet@1x.png 1x, image/tablet/catalog-desktop/rice-500g-tablet@2x.png 2x">
+            <img class="card__img" src="images/mobile/catalog-mobile/rice-500g-mobile@1x.png" srcset="images/mobile/catalog-mobile/rice-500g-mobile@2x.png 2x" alt=" Кэт Энерджи 500грамм со вкусом риса" width="140" height="107">
             <div class="card__content">
               <h3 class="card__title">Cat Energy <br>SLIM 500 г</h3>
               <ul class="card__list">
@@ -201,7 +227,6 @@
           </li>
           <!-- Показать еще -->
           <li class="catalog-list__item">
-            <img class="card__img" src="images" alt="Товар" width="68" height="86">
             <div class="card__content">
               <h3 class="card__title">Показать еще <br>100500 товаров</h3>
               <p class="card__title-desc">На самом деле вкусов гораздо больше!</p>
