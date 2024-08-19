@@ -302,11 +302,17 @@
           <p class="adress__street">ул. Большая Конюшенная, д. 19/8</p>
           <p class="adress__city">Санкт-Петербург</p>
         </div>
+        <div class="map">
+          <picture>
+            <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/desktop/location-desktop@1x.png 1x, images/desktop/location-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/tablet/location-tablet@1x.png 1x, images/tablet/location-tablet@2x.png 2x">
+            <img class="map__img" src="../source/images/mobile/location-mobile@1x.png" alt="Карта офиса" width="768" height="400">
+          </picture>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <img class="invitation__map map" src="../source/images/Map.png" alt="Карта" width="768" height="400">
     <div class="container">
       <a class="footer__logo" href="#">
         <img class="footer__logo-img" src="../source/images/footer-logo.svg" alt="logo" width="128" height="24">
