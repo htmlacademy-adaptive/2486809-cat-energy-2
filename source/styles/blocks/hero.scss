@@ -1,7 +1,32 @@
 .hero {
-  font-family: "Oswald", sans-serif;
-  color: #ffffff;
+min-height: 480px;
+background-image:
+url("../../images/mobile/cat-hero-bg@1x.jpg"),
+linear-gradient(to bottom, #65a83c 302px, transparent 302px);
+background-repeat: no-repeat;
+background-position: center top;
+background-size:320px 302px, 100% 100%;
+color: $color-default-white;
+
+@media (min-resolution: 2dppx) {
+  background-image:
+  url("../../images/mobile/cat-hero-bg@2x.jpg"),
+  linear-gradient(to bottom, #65a83c 302px, transparent 302px);
 }
+
+@media (min-width: $vp-768) {
+background-image: none;
+color: $color-default-black;
+}
+
+@media (min-width: $vp-1280) {
+background-image:
+url("../../images/desktop/cat-desktop-bg@1x.jpg"),
+linear-gradient(to right, transparent 50%, #65a83c 50%);
+color: $color-default-black;
+}
+}
+
 
 .hero__section-title {
   font-size: 36px;

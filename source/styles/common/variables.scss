@@ -1,2 +1,30 @@
 /* здесь используйте глобальные переменные */
-$basic-dark-color: #444444;
+//Color
+
+//default
+$color-default-white:#ffffff;
+$color-default-black:#000000;
+//dark-grey
+$color-charcoal:#444444;
+$color-dim-grey:#666666;
+$color-nero:#222222;
+//light-grey
+$color-white-smoke: #f2f2f2;
+$color-whisper: #ebebeb;
+$color-very-light-grey: #cdcdcd;
+//black
+$color-black-1: #111111;
+//green
+$color-apple: #68b738;
+$color-limeade: #5eaa2f;
+
+//Viewports
+$vp-320: 320px;
+$vp-768: 768px;
+$vp-1280: 1280px;
+
+//Fonts
+$ff-primary: "Oswald", "Arial", sans-serif;
+$ff-secondary: "Lato", "Arial", sans-serif;
+
+
