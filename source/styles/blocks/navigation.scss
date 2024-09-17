@@ -1,0 +1,23 @@
+.navigation__toggle {
+  width: 24px;
+  height: 24px;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation__link {
+  font-size: 20px;
+  line-height: 20px;
+  color: $color-default-black;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+}
+
