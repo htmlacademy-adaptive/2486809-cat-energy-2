@@ -17,32 +17,35 @@
   <header class="main-header main-header--on-content">
     <div class="container">
       <div class="main-header__container">
-        <a class="main-header__logo" href="#">
+        <a class="main-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1280px)" width="70" height="59" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop.svg">
+            <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop.svg">
             <source media="(min-width: 768px)" width="70" height="59" type="image/svg+xml" srcset="images/tablet/logo-tablet/logo-tablet.svg">
             <img class=" main-header__logo-image" src="images/mobile/logo-mobile/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
           </picture>
         </a>
         <a class="main-header__logo-text" href="#">
           <picture>
-            <source media="(min-width: 1280px)" width="118" height="21" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop-text.svg">
+            <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop-text.svg">
             <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/tablet/logo-tablet/logo-tablet-text.svg">
             <img src="images/mobile/logo-mobile/logo-mobile-text.svg" width="101" height="18" alt="Логотип Cat Energy">
           </picture>
         </a>
-        <nav class="navigation">
-          <button class="navigation__toggle" type="button">
+        <nav class="main-header__nav navigation">
+          <button class="burger" type="button">
             <span class="visually-hidden">Открыть меню</span>
+            <span class="burger__line burger__line--top"></span>
+            <span class="burger__line burger__line--middle"></span>
+            <span class="burger__line burger__line--bottom"></span>
           </button>
-          <ul class="navigation-list">
-            <li class="navigation-list__item navigation-list__item--current">
-              <a class="navigation__link" href="#">Главная</a>
+          <ul class="navigation__list">
+            <li class="navigation__item navigation-list__item--current">
+              <a class="navigation__link" href="index.html">Главная</a>
             </li>
-            <li class="navigation-list__item">
+            <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="navigation-list__item">
+            <li class="navigation__item">
               <a class="navigation__link" href="#">Подбор программы</a>
             </li>
           </ul>
@@ -55,22 +58,24 @@
     <!-- Секция с главным предложением  -->
     <section class="hero">
       <div class="container">
-        <h2 class="hero__section-title">
-          Функциональное питание для котов
-        </h2>
-        <p class="hero__slogan">
-          Занялся собой? Займись котом!
-        </p>
-        <div class="hero__image-wrap">
-          <picture>
-            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/index-cat-desktop@1x.png 1x, images/desktop/index-cat-desktop@2x.png 2x">
-            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/tablet/index-cat-tablet@1x.png 1x, images/tablet/index-cat-tablet@2x.png 2x">
-            <img class="hero__image" src="images/mobile/index-cat-mobile@1x.png" srcset="images/mobile/index-cat-mobile@2x.png 2x" width="280" height="270" alt="Продукт Кэт энерджи со вкусом курицы">
-          </picture>
+        <div class="hero-wrapper">
+          <h2 class="hero__section-title">
+            Функциональное питание для котов
+          </h2>
+          <p class="hero__slogan">
+            Занялся собой? Займись котом!
+          </p>
+          <div class="hero__image-wrap">
+            <picture>
+              <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/index-cat-desktop@1x.png 1x, images/desktop/index-cat-desktop@2x.png 2x">
+              <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/tablet/index-cat-tablet@1x.png 1x, images/tablet/index-cat-tablet@2x.png 2x">
+              <img class="hero__image" src="images/mobile/index-cat-mobile@1x.png" srcset="images/mobile/index-cat-mobile@2x.png 2x" width="280" height="270" alt="Продукт Кэт энерджи со вкусом курицы">
+            </picture>
+          </div>
+          <a class="hero__link" href="#">
+            Подобрать программу
+          </a>
         </div>
-        <a class="hero__link" href="#">
-          Подобрать программу
-        </a>
       </div>
     </section>
     <!-- Программа -->
@@ -195,7 +200,7 @@
     <div class="container">
       <a class="footer__logo" href="#">
         <picture>
-          <source media="(min-width: 1280px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-catenergy-footer.svg">
+          <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-catenergy-footer.svg">
           <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-catenergy-footer.svg">
           <img src="images/logo-catenergy-footer.svg" width="101" height="18" alt="Логотип Cat Energy">
         </picture>
