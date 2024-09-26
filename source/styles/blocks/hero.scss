@@ -1,8 +1,10 @@
 .hero {
 min-height: 480px;
+padding-top: 27px;
+margin-bottom: 20px;
 background-image:
 url("../../images/mobile/cat-hero-bg@1x.jpg"),
-linear-gradient(to bottom, #65a83c 302px, transparent 302px);
+linear-gradient(to bottom, $color-green-back 302px, transparent 302px);
 background-repeat: no-repeat;
 background-position: center top;
 background-size:320px 302px, 100% 100%;
@@ -11,14 +13,35 @@ color: $color-default-white;
 @media (min-resolution: 2dppx) {
   background-image:
   url("../../images/mobile/cat-hero-bg@2x.jpg"),
-  linear-gradient(to bottom, #65a83c 302px, transparent 302px);
+  linear-gradient(to bottom, $color-green-back 302px, transparent 302px);
+}
+@media (min-width: $vp-768) {
+  padding-top: 40px;
+  background-image: none;
+  color: $color-default-black;
+}
+
+@media (min-width: $vp-1300) {
+  min-height: 694px;
+  margin-bottom: 82px;
+  background-image:
+  url("../../images/desktop/Cat-bg-pc@1x.jpg"),
+  linear-gradient(to right, $color-default-white 50%, $color-green-back 50%);
+  background-repeat: no-repeat;
+  background-position: left calc(50% + 520px) bottom, bottom;
+  background-size: 1040px 693px, 100% 100%;
+  color: $color-default-black;
 }
 }
 
-.hero-wrapper {
+.hero__wrapper {
   display: flex;
   flex-direction: column;
+  @media (min-width: $vp-1300) {
+    margin-top: 143px;
+  }
 }
+
 
 .hero__section-title {
   font-size: 36px;
