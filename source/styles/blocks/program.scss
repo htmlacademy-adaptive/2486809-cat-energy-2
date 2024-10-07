@@ -2,12 +2,17 @@
   list-style: none;
 }
 
+.program__item {
+  background-color: $color-white-smoke;
+}
+
 .program__section-subtitle {
   font-size: 24px;
   line-height: 37px;
 }
 
-
 .program__text {
-
+  font-size: 14px;
+  line-height: 18px;
 }
+

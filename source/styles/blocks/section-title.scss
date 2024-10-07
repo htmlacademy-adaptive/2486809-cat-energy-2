@@ -1,4 +1,12 @@
-.section-subtitle {
+.section-title {
+  font-family: $ff-primary;
   font-size: 40px;
   line-height: 36px;
+  color: $color-default-black;
+  @media (min-width: $vp-768) {
+    font-size: 60px;
+    line-height: 60px;
+    }
 }
+
+
