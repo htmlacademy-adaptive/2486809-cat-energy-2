@@ -43,6 +43,11 @@ color: $color-default-white;
 }
 
 
+.hero__image {
+  display: block;
+  margin: 0 auto;
+}
+
 .hero__section-title {
   font-size: 36px;
   line-height: 36px;

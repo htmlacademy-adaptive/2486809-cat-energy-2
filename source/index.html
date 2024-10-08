@@ -17,7 +17,7 @@
   <header class="main-header main-header--on-content">
     <div class="container">
       <div class="main-header__container">
-        <a class="main-header__logo" href="index.html">
+        <a class="main-header__logo" href="index.html" aria-current="page">
           <picture>
             <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop.svg">
             <source media="(min-width: 768px)" width="70" height="59" type="image/svg+xml" srcset="images/tablet/logo-tablet/logo-tablet.svg">
@@ -52,25 +52,19 @@
     </div>
   </header>
   <main class="main-content">
-    <h1 class="visually-hidden">Подбор правильного питания для котов и кошек</h1>
     <!-- Секция с главным предложением  -->
     <section class="hero">
       <div class="container">
         <div class="hero__wrapper">
-          <h1 class="vissually-hidden"></h1>
-          <h2 class="hero__title section-title">
-            Функциональное питание для котов
-          </h2>
+          <h1 class="hero__title">Функциональное питание для котов</h1>
           <p class="hero__slogan">
             Занялся собой? Займись котом!
           </p>
-          <div class="hero__image-wrap">
-            <picture>
-              <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/index-cat-desktop@1x.png 1x, images/desktop/index-cat-desktop@2x.png 2x">
-              <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/tablet/index-cat-tablet@1x.png 1x, images/tablet/index-cat-tablet@2x.png 2x">
-              <img class="hero__image" src="images/mobile/index-cat-mobile@1x.png" srcset="images/mobile/index-cat-mobile@2x.png 2x" width="280" height="270" alt="Продукт Кэт энерджи со вкусом курицы">
-            </picture>
-          </div>
+          <picture>
+            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/desktop/index-cat-desktop@1x.png 1x, images/desktop/index-cat-desktop@2x.png 2x">
+            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/tablet/index-cat-tablet@1x.png 1x, images/tablet/index-cat-tablet@2x.png 2x">
+            <img class="hero__image" src="images/mobile/index-cat-mobile@1x.png" srcset="images/mobile/index-cat-mobile@2x.png 2x" width="280" height="270" alt="Продукт Кэт энерджи со вкусом курицы">
+          </picture>
           <a class="hero__link" href="#">
             Подобрать программу
           </a>
@@ -193,10 +187,13 @@
     </section>
     <section class="invitation">
       <div class="container">
-        <h2 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <div class="invitation__adress adress">
-          <p class="adress__street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="adress__city">Санкт-Петербург</p>
+        <h2 class="vissually-hidden">Раздел с приглашениме для дилеров и адресом</h2>
+        <div class="wrap-adress">
+          <p class="invitation__title">Приглашаем к сотрудничеству дилеров!</p>
+          <adress class="invitation__adress adress">
+            <p class="adress__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="adress__city">Санкт-Петербург</p>
+          </adress>
         </div>
         <div class="map">
           <picture>
