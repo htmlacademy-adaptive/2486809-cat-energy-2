@@ -8,7 +8,6 @@ linear-gradient(to bottom, $color-green-back 302px, transparent 302px);
 background-repeat: no-repeat;
 background-position: center top;
 background-size:320px 302px, 100% 100%;
-color: $color-default-white;
 
 @media (min-resolution: 2dppx) {
   background-image:
@@ -18,7 +17,6 @@ color: $color-default-white;
 @media (min-width: $vp-768) {
   padding-top: 40px;
   background-image: none;
-  color: $color-default-black;
 }
 
 @media (min-width: $vp-1300) {
@@ -30,7 +28,6 @@ color: $color-default-white;
   background-repeat: no-repeat;
   background-position: left calc(50% + 520px) bottom, bottom;
   background-size: 1040px 693px, 100% 100%;
-  color: $color-default-black;
 }
 }
 
@@ -41,6 +38,7 @@ color: $color-default-white;
     margin-top: 143px;
   }
 }
+
 
 
 .hero__image {
@@ -54,8 +52,15 @@ color: $color-default-white;
 }
 
 .hero__slogan {
+  font-family: $ff-primary;
   font-size: 14px;
   line-height: 14px;
+  color: $color-default-white;
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-default-black;
+    }
 }
 
 .hero__link {
