@@ -1,6 +1,6 @@
 .section-title {
   font-family: $ff-primary;
-  font-size: 40px;
+  font-size: 36px;
   line-height: 36px;
   @media (min-width: $vp-768) {
     font-size: 60px;
@@ -10,6 +10,14 @@
     &--white {
      color: $color-default-white;
     }
+   }
+   &--size {
+    font-size: 36px;
+    line-height: 40px;
+    @media (min-width: $vp-768) {
+      font-size: 60px;
+      line-height: 60px;
+      }
    }
 }
 

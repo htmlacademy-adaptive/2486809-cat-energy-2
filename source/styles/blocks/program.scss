@@ -7,12 +7,30 @@
 }
 
 .program__section-subtitle {
+  font-family: $ff-primary;
   font-size: 24px;
   line-height: 37px;
+  color: $color-default-black;
+  text-transform: uppercase;
+  @media (min-width: $vp-768) {
+    font-size: 36px;
+    line-height: 36px;
+    }
 }
 
-.program__text {
-  font-size: 14px;
-  line-height: 18px;
+
+.program__link {
+  font-family: $ff-primary;
+  color: $color-default-black;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 30px;
+   }
 }
+
+
 

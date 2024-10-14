@@ -1,5 +1,18 @@
-.experience__text {
-  color: $color-default-black;
+.experience__conten-text {
+  font-family: $ff-primary;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.experience__content-desc {
+  font-family: $ff-secondary;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: lowercase;
+}
+.experience__cost {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
