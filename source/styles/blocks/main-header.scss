@@ -24,7 +24,6 @@ align-items: center;
 
 .main-header__logo-image {
   display: flex;
-  flex-shrink: 0;
   &:hover {
     opacity: 0.8;
   }
@@ -35,12 +34,14 @@ align-items: center;
 
 
 .main-header__logo-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
   max-width: initial;
   display: block;
+  @media (max-width: $vp-768) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
   &:hover {
     opacity: 0.8;
   }

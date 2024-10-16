@@ -3,5 +3,9 @@
   color: $color-charcoal;
   font-size: 14px;
   line-height: 20px;
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 

@@ -6,13 +6,15 @@
   }
   @media (min-width: $vp-1300) {
     display: flex;
-    flex-flow: row wrap;
     color: $color-default-white;
   }
 }
 
 
 .navigation__list {
+   padding-left: 0;
+   margin-top: 0;
+   margin-bottom: 0;
   @media (max-width: $vp-768) {
   position: absolute;
   top: 100%;
@@ -22,10 +24,8 @@
   padding: 0;
   list-style: none;
   }
-
   @media (min-width: $vp-768) {
     display: flex;
-    list-style: none;
     color: $color-default-black;
   }
 }
@@ -41,9 +41,6 @@
 
 .navigation__item{
   display: block;
-  width: 100%;
-
-
 @media (max-width: $vp-768) {
   border-top: solid 1px $color-whisper;
 }
@@ -60,6 +57,5 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  width: 100%;
   text-decoration: none;
 }
