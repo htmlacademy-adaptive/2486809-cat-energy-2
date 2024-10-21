@@ -34,9 +34,10 @@ background-size:320px 302px, 100% 100%;
 .hero__wrapper {
   display: flex;
   flex-direction: column;
-  @media (min-width: $vp-1300) {
-    margin-top: 143px;
-  }
+}
+
+.hero__title {
+  margin-bottom: 25px;
 }
 
 .hero__slogan {
@@ -44,6 +45,12 @@ background-size:320px 302px, 100% 100%;
   font-size: 14px;
   line-height: 14px;
   color: $color-default-white;
+  text-transform: uppercase;
+  margin: 0;
+  @media (max-width: $vp-768) {
+    margin: auto;
+    margin-bottom: 29px;
+    }
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 20px;

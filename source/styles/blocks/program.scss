@@ -1,9 +1,16 @@
 .program__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   list-style: none;
+  padding-left: 0;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .program__item {
   background-color: $color-white-smoke;
+  padding: 30px 33px 18px 20px;
 }
 
 .program__section-subtitle {
@@ -12,12 +19,16 @@
   line-height: 37px;
   color: $color-default-black;
   text-transform: uppercase;
+  margin: 0;
   @media (min-width: $vp-768) {
     font-size: 36px;
     line-height: 36px;
     }
 }
 
+.program__text {
+  padding: 0;
+}
 
 .program__link {
   font-family: $ff-primary;

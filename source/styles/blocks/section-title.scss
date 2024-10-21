@@ -1,8 +1,11 @@
 .section-title {
   font-family: $ff-primary;
+  font-weight: $fw-regular;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
   @media (max-width : $vp-768) {
+    text-align: center;
     &--white {
      color: $color-default-white;
     }

@@ -5,13 +5,14 @@
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
+  font-family: $ff-primary;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: $fw-regular;
   text-decoration: none;
   text-transform: uppercase;
   color: $color-default-white;
   border: none;
   background-color: $color-apple;
   cursor: pointer;
-  font-family: $ff-secondary;
-  font-size: 16px;
-  line-height: 1.25;
 }

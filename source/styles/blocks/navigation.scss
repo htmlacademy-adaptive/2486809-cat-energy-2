@@ -3,6 +3,7 @@
   flex-direction: column;
   @media (min-width: $vp-768) {
     flex-flow: row wrap;
+    gap: 33px;
   }
   @media (min-width: $vp-1300) {
     display: flex;
@@ -26,6 +27,8 @@
   }
   @media (min-width: $vp-768) {
     display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
     color: $color-default-black;
   }
 }
@@ -58,4 +61,7 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  @media (min-width: $vp-1300) {
+    color: $color-default-white;
+  }
 }
