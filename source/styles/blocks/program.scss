@@ -51,12 +51,11 @@
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    display: flex;
     flex-shrink: 0;
   }
   &::after {
     content:"";
-    background-image: url("../../icons/stack.svg#cat-slim");
+    background-image: url("../../icons/cat-slim.svg");
     background-repeat: no-repeat;
     background-size: 36px 50px;
     width: 36px;
@@ -73,12 +72,11 @@
       border-radius: 50%;
       width: 50px;
       height: 50px;
-      display: flex;
       flex-shrink: 0;
     }
     &::after {
       content:"";
-      background-image: url("../../icons/stack.svg#cat-pro");
+      background-image: url("../../icons/cat-pro.svg");
       background-repeat: no-repeat;
       background-size: 67px 28px;
       width: 67px;
@@ -92,25 +90,21 @@
   @media (min-width: $vp-768) {
     font-size: 36px;
     line-height: 36px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
     &--slim {
       &::before {
        content:"";
-       background-color: $color-apple;
-       border-radius: 50%;
        width: 200px;
        height: 200px;
-       display: flex;
-       flex-shrink: 0;
        top: 0;
      }
      &::after {
        content:"";
-       background-image: url("../../icons/stack.svg#cat-slim");
-       background-repeat: no-repeat;
+       background-image: url("../../icons/cat-slim.svg");
        background-size: 36px 50px;
        width: 36px;
        height: 50px;
-       position: absolute;
        top: 27px;
        left: 27px;
      }
@@ -118,16 +112,12 @@
      &--pro {
        &::before {
          content:"";
-         background-color: $color-apple;
-         border-radius: 50%;
-         width: 50px;
-         height: 50px;
-         display: flex;
-         flex-shrink: 0;
+         width: 200px;
+         height: 200px;
        }
        &::after {
          content:"";
-         background-image: url("../../icons/stack.svg#cat-pro");
+         background-image: url("../../icons/cat-pro.svg");
          background-repeat: no-repeat;
          background-size: 67px 28px;
          width: 67px;
@@ -139,6 +129,43 @@
      }
     }
 
+    @media (min-width: $vp-1300) {
+      &--slim {
+        &::before {
+         content:"";
+         width: 100px;
+         height: 100px;
+       }
+       &::after {
+         content:"";
+         background-image: url("../../icons/cat-slim.svg");
+         background-repeat: no-repeat;
+         background-size: 36px 50px;
+         width: 36px;
+         height: 50px;
+         top: 27px;
+         left: 27px;
+       }
+     }
+       &--pro {
+         &::before {
+           content:"";
+           width: 100px;
+           height: 100px;
+         }
+         &::after {
+           content:"";
+           background-image: url("../../icons/cat-pro.svg");
+           background-repeat: no-repeat;
+           background-size: 67px 28px;
+           width: 67px;
+           height: 28px;
+           position: absolute;
+           top: 40px;
+           left: 9px;
+         }
+       }
+    }
 }
 
 .program__text {
@@ -176,7 +203,7 @@
     width: 24;
     height: 12px;
     transition: all, all, 1.3s;
-    mask-image: url(../../icons/stack.svg#arrow-slim&pro);
+    mask-image: url("../../icons/arrow-slim&pro.svg");
     mask-size: 24px 12px;
     mask-repeat: no-repeat;
    }

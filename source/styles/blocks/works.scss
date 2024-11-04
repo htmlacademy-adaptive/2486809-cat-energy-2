@@ -1,3 +1,11 @@
+.works {
+  margin-bottom: 49px;
+}
+
+.works__title {
+  margin-bottom: 40px;
+}
+
 .works__list {
   display: flex;
   flex-direction: column;
@@ -12,8 +20,33 @@
   display: flex;
   flex-direction: row;
   position: relative;
- &::before {
-
+  gap: 20px;
+ &--decor-square {
+  &::before {
+   content:"";
+   background-color: $color-apple;
+   width: 60px;
+   height: 60px;
+   flex-shrink: 0;
+   gap: 20px;
  }
 }
+ &--leaf {
+  &::after {
+   content:"";
+   background-image: url(../../icons/icon_leaf.svg);
+   background-repeat: no-repeat;
+   background-size: 36px 50px;
+   width: 36px;
+   height: 50px;
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+ }
 
+}
+
+.works__card-text {
+  margin: 0;
+}

@@ -1,3 +1,18 @@
+.experience {
+  background-color: $color-whisper;
+}
+
+.experience__section-title {
+  padding-top: 25px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.experience__text {
+  margin: 0;
+  padding: 0;
+}
+
 .experience__conten-text {
   font-family: $ff-primary;
   font-size: 24px;
