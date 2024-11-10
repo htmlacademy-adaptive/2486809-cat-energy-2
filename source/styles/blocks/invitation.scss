@@ -4,9 +4,16 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 26px;
   }
+}
+
+.wrap-adress {
+  display: flex;
+  padding-top: 26px;
+  margin-bottom: 26px;
 }
 

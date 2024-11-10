@@ -163,29 +163,33 @@
         <p class="experience__text section-text">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <ul class="experience__list">
-          <li class="experience__item">
-            <span class="experience__conten-text">5кг</span>
-            <span class="experience__content-desc">Снижение веса</span>
-          </li>
-          <li class="experience__item">
-            <span class="experience__conten-text">60 дней</span>
-            <span class="experience__content-desc">Затрачено времени</span>
-          </li>
-        </ul>
-        <p class="experience__cost">Затраты на питание:<span>15 000 РУБ.</span></p>
-        <div class="experience__slider slider">
+        <div class="experience__wrapper">
+          <ul class="experience__list">
+            <li class="experience__item">
+              <span class="experience__conten-text">5 кг</span>
+              <span class="experience__content-desc experience__content-desc--weight">Снижение веса</span>
+            </li>
+            <li class="experience__item">
+              <span class="experience__conten-text">60 дней</span>
+              <span class="experience__content-desc experience__content-desc--days">Затрачено времени</span>
+            </li>
+          </ul>
+          <p class="experience__cost">Затраты на питание:<span>15 000 РУБ.</span></p>
+        </div>
+        <div class="slider">
           <picture>
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-fat-tablet@1x.png 1x, images/tablet/cat-fat-tablet@2x.png 2x">
-            <img class="slider__img" src="images/mobile/cat-fat-mobile@1x.png" width="280" height="256" alt="Фото до: Кот на массе">
+            <img class="slider__img slider__img--before" src="images/mobile/cat-fat-mobile@1x.png" width="280" height="256" alt="Фото до: Кот на массе">
           </picture>
           <picture>
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-small-tablet@1x.png 1x, images/tablet/cat-small-tablet@2x.png 2x">
-            <img class="slider__img" src="images/mobile/cat-small-mobile@1x.png" width="280" height="256" alt="Фото после: Худой код">
+            <img class="slider__img slider__img--after" src="images/mobile/cat-small-mobile@1x.png" width="280" height="256" alt="Фото после: Худой код">
           </picture>
-          <button class="slider__button" type="button">
+          <input type="range" class="slider__range-js" min="0" max="100" value="50" step="1" id="slider-range">
+          <div class="slider__range-visible"></div>
+          <!-- <button class="slider__button" type="button">
             <span class="visually-hidden">Передвинуть ползунок</span>
-          </button>
+          </button> -->
         </div>
       </div>
     </section>
@@ -211,30 +215,32 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <a class="footer__logo" href="#" arria-current="page">
-        <img src="images/logo-catenergy-footer.svg" width="101" height="18" alt="Логотип Cat Energy">
-      </a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <span class="visually-hidden">Мы в Вконтакте</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <span class="visually-hidden">Мы в Ютубе</span>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <span class="visually-hidden">Мы в Телеграме</span>
-          </a>
-        </li>
-      </ul>
-      <a class="footer__copyright" href="#">
-        <span class="footer__copyright-text">HTML Academy</span>
-        <img class="footer__copyright-logo" src="images/html-academy.svg" alt="HTML Academy logo" width="27" height="24">
-      </a>
+      <div class="footer__wrapper">
+        <a class="footer__logo" href="#" arria-current="page">
+          <img src="images/logo-catenergy-footer.svg" width="101" height="18" alt="Логотип Cat Energy">
+        </a>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Мы в Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Мы в Ютубе</span>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="#">
+              <span class="visually-hidden">Мы в Телеграме</span>
+            </a>
+          </li>
+        </ul>
+        <a class="footer__copyright" href="#">
+          <span class="footer__copyright-text">HTML Academy</span>
+          <img class="footer__copyright-logo" src="images/html-academy.svg" alt="HTML Academy logo" width="27" height="24">
+        </a>
+      </div>
     </div>
   </footer>
 
