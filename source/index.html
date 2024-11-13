@@ -75,23 +75,19 @@
           Программы питания для котов и кошек
         </h2>
         <ul class="program__list">
-          <li class="program__item">
-            <div class="program__container-decor">
-              <h3 class="program__section-subtitle section-title">
-                Похудение
-              </h3>
-              <p class="program__text program__text--decor-line section-text section-text--color program__text--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="program__link" href="#">Каталог slim</a>
-            </div>
+          <li class="program__item program__item--slim">
+            <h3 class="program__subtitle section-title">
+              Похудение
+            </h3>
+            <p class="program__desc program__desc--decor-line section-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="program__link" href="#">Каталог slim</a>
           </li>
-          <li class="program__item">
-            <div class="program__container-decor">
-              <h3 class="program__section-subtitle section-title">
-                Набор массы
-              </h3>
-              <p class="program__text  program__text--decor-line section-text section-text--color program__text--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="program__link" href="#">Каталог pro</a>
-            </div>
+          <li class="program__item program__item--pro">
+            <h3 class="program__subtitle section-title">
+              Набор массы
+            </h3>
+            <p class="program__desc program__desc--decor-line section-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="program__link" href="#">Каталог pro</a>
           </li>
         </ul>
       </div>
@@ -102,8 +98,8 @@
         <h2 class="works__title section-title section-title--size">Как это работает</h2>
         <ol class="works__list">
           <!-- Карточка №1 про пользу -->
-          <li class="works__item works__item--decor-square works__item--leaf">
-            <article class="works__card">
+          <li class="works__item works__item--decor works__item--leaf">
+            <article class="works__card works__card--number-1">
               <h3 class="visually-hidden">Полезно</h3>
               <p class="works__card-text section-text">
                 Функциональное питание
@@ -113,42 +109,36 @@
             </article>
           </li>
           <!-- Карточка №2 про порошок -->
-          <li class="works__item works__item--decor-square works__item--powder">
-            <article class="works__card">
+          <li class="works__item works__item--decor works__item--powder">
+            <article class="works__card works__card--number-2">
               <h3 class="visually-hidden">Удобная форма для употребления</h3>
-              <div class="works__card-img-content"></div>
               <p class="works__card-text section-text">
                 Выпускается в виде порошка,
                 который нужно лишь залить
                 кипятком и готово.
               </p>
-              <div class="works__card-number"></div>
             </article>
           </li>
           <!-- Карточка №3 про замену приема пищи -->
-          <li class="works__item works__item--decor-square works__item--change-eat">
-            <article class="works__card">
+          <li class="works__item works__item--decor works__item--eat">
+            <article class="works__card works__card--number-3">
               <h3 class="visually-hidden">Полноценный прием пищи</h3>
-              <div class="works__card-img-content"></div>
               <p class="works__card-text section-text">
                 Замените один-два приема
                 обычной еды на наше
                 функциональное питание.
               </p>
-              <div class="works__card-number"></div>
             </article>
           </li>
           <!-- Карточка №4 про результат -->
-          <li class="works__item works__item--decor-square works__item--change-eat">
-            <article class="works__card ">
+          <li class="works__item works__item--decor works__item--clock">
+            <article class="works__card works__card--number-4">
               <h3 class="visually-hidden">Быстрый результат</h3>
-              <div class="works__card-img-content"></div>
               <p class="works__card-text section-text">
                 Уже через месяц наслаждайтесь
                 изменениями к лучшему
                 вашего питомца!
               </p>
-              <div class="works__card-number"></div>
             </article>
           </li>
         </ol>
@@ -185,11 +175,10 @@
             <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-small-tablet@1x.png 1x, images/tablet/cat-small-tablet@2x.png 2x">
             <img class="slider__img slider__img--after" src="images/mobile/cat-small-mobile@1x.png" width="280" height="256" alt="Фото после: Худой код">
           </picture>
-          <input type="range" class="slider__range-js" min="0" max="100" value="50" step="1" id="slider-range">
-          <div class="slider__range-visible"></div>
-          <!-- <button class="slider__button" type="button">
-            <span class="visually-hidden">Передвинуть ползунок</span>
-          </button> -->
+          <label class="visually-hidden" for="slider-range">Показать картинку до или после</label>
+          <input class="slider__range-js" type="range" min="0" max="100" value="50" step="1" id="slider-range" name="slider-range">
+          <div class="slider__range-visible">
+          </div>
         </div>
       </div>
     </section>
@@ -203,43 +192,45 @@
             <span class="adress__city">Санкт-Петербург</span>
           </adress>
         </div>
-        <div class="map">
-          <picture>
-            <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/desktop/location-desktop@1x.png 1x, images/desktop/location-desktop@2x.png 2x">
-            <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/tablet/location-tablet@1x.png 1x, images/tablet/location-tablet@2x.png 2x">
-            <img class="map__img" src="images/mobile/location-mobile@1x.png" alt="Карта офиса" width="768" height="400">
-          </picture>
-        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
+    <div class="map">
+      <picture>
+        <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/desktop/location-desktop@1x.png 1x, images/desktop/location-desktop@2x.png 2x">
+        <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/tablet/location-tablet@1x.png 1x, images/tablet/location-tablet@2x.png 2x">
+        <img class="map__img" src="images/mobile/location-mobile@1x.png" alt="Карта офиса" width="768" height="400">
+      </picture>
+    </div>
     <div class="container">
       <div class="footer__wrapper">
-        <a class="footer__logo" href="#" arria-current="page">
+        <a class="footer__logo-cat_energy" href="#" arria-current="page">
           <img src="images/logo-catenergy-footer.svg" width="101" height="18" alt="Логотип Cat Energy">
         </a>
-        <ul class="social-list">
+        <ul class="social-list social-list__margins footer__line-decor">
           <li class="social-list__item">
-            <a class="social-list__link" href="#">
+            <a class="social-list__link social-list__link--vk" href="#">
               <span class="visually-hidden">Мы в Вконтакте</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="#">
+            <a class="social-list__link social-list__link--youtube" href="#">
               <span class="visually-hidden">Мы в Ютубе</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link" href="#">
+            <a class="social-list__link social-list__link--tg" href="#">
               <span class="visually-hidden">Мы в Телеграме</span>
             </a>
           </li>
         </ul>
-        <a class="footer__copyright" href="#">
-          <span class="footer__copyright-text">HTML Academy</span>
-          <img class="footer__copyright-logo" src="images/html-academy.svg" alt="HTML Academy logo" width="27" height="24">
-        </a>
+        <div class="footer__copyright-wrapper">
+          <a class="footer__copyright" href="#">
+            <span class="footer__copyright-text_htmlAcademy">HTML Academy</span>
+            <img class="footer__copyright-logo_htmlAcademy" src="images/html-academy.svg" alt="HTML Academy logo" width="27" height="24">
+          </a>
+        </div>
       </div>
     </div>
   </footer>

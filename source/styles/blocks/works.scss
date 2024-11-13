@@ -1,50 +1,114 @@
-.works {
-  margin-bottom: 49px;
-}
 
 .works__title {
-  margin-bottom: 40px;
+  @media (max-width: $vp-768) {
+    margin-bottom: 40px;
+    }
+  @media (min-width: $vp-768) {
+    margin-bottom: 32px;
+    }
 }
 
 .works__list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  margin-bottom: 49px;
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 49px;
+  @media (max-width: $vp-768) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    }
+  @media (min-width: $vp-768) {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+     gap: 30px;
+    }
 }
 
-.works__item {
-  display: flex;
-  flex-direction: row;
+.works__item  {
   position: relative;
-  gap: 20px;
- &--decor-square {
-  &::before {
-   content:"";
-   background-color: $color-apple;
-   width: 60px;
-   height: 60px;
-   flex-shrink: 0;
-   gap: 20px;
- }
-}
- &--leaf {
-  &::after {
-   content:"";
-   background-image: url(../../icons/icon_leaf.svg);
-   background-repeat: no-repeat;
-   background-size: 36px 50px;
-   width: 36px;
-   height: 50px;
-   position: absolute;
-   top: 0;
-   left: 0;
- }
- }
+  &--decor {
+    &::before {
+      content:"";
+      background-color: $color-apple;
+      flex-shrink: 0;
+    }
+    &::after {
+      content:"";
+      background-repeat: no-repeat;
+      position: absolute;
+      }
+   }
+   &--leaf {
+    &::after {
+      background-image: url(../../icons/icon_leaf.svg);
+      }
+   }
+   &--powder {
+    &::after {
+      background-image: url(../../icons/icon_powder.svg);
+      }
+  }
+   &--eat {
+    &::after {
+      background-image: url(../../icons/icon_eat.svg);
+      }
+   }
+   &--clock {
+    &::after {
+      background-image: url(../../icons/clock.svg);
+      }
+   }
+    @media (max-width: $vp-768) {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      &--decor {
+        &::before {
+          width: 60px;
+          height: 60px;
+        }
+        &::after {
+          background-size: 30px 32px;
+          width: 30px;
+          height: 32px;
+          top: 14px;
+          left: 15px;
+          }
+      }
+    }
+    @media (min-width: $vp-768) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+        &--decor {
+          &::before {
+            width: 80px;
+            height: 80px;
+          }
+          &::after {
+            background-size: 30px 32px;
+            width: 30px;
+            height: 32px;
+            top: 27px;
+            left: 27px;
+          }
+        }
+    }
+  }
 
+.works__card {
+ &--number {
+  &::before {
+    content:"1";
+    position: absolute;
+    font-family: $ff-primary;
+    font-size: 280px;
+    line-height: 280px;
+    color: $color-white-smoke;
+  }
+ }
 }
 
 .works__card-text {

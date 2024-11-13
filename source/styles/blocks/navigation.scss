@@ -5,7 +5,7 @@
     flex-flow: row wrap;
     gap: 33px;
   }
-  @media (min-width: $vp-1300) {
+  @media (min-width: $vp-1440) {
     display: flex;
     color: $color-default-white;
   }
@@ -67,7 +67,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $color-default-black;
-  @media (min-width: $vp-1300) {
+  @media (min-width: $vp-1440) {
     color: $color-default-white;
   }
 }
