@@ -99,14 +99,22 @@
   }
 
 .works__card {
- &--number {
-  &::before {
-    content:"1";
+  @media (min-width: $vp-768) {
+   &::before {
+    content:"";
     position: absolute;
     font-family: $ff-primary;
     font-size: 280px;
     line-height: 280px;
     color: $color-white-smoke;
+    z-index: -1;
+   }
+  &--number-1 {
+   &::before {
+    content:"1";
+    top: 0;
+    right: 0;
+   }
   }
  }
 }
