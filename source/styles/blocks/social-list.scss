@@ -6,15 +6,20 @@
   gap: 24px;
   margin: 0;
   padding: 0;
+  @media (min-width: $vp-768) {
+    align-items: center;
+  }
 }
 
 .social-list__margins {
-  margin-bottom: 40px;
+  @media (max-width: $vp-768) {
+    margin-bottom: 40px;
+  }
 }
 
 .social-list__link {
   display: flex;
- &::before {
+   &::before {
   content: "";
   display: inline-block;
   width: 28px;
@@ -23,7 +28,8 @@
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
- }
+  }
+
  &:hover::before {
   background-color: $color-apple;
 }
