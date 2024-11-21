@@ -6,24 +6,18 @@
   gap: 24px;
   margin: 0;
   padding: 0;
-  @media (min-width: $vp-768) {
-    align-items: center;
-  }
 }
 
-.social-list__margins {
-  @media (max-width: $vp-768) {
-    margin-bottom: 40px;
-  }
-}
 
 .social-list__link {
   display: flex;
+  align-items: center;
+  justify-content: center;
    &::before {
   content: "";
   display: inline-block;
   width: 28px;
-  height: 22px;
+  height: 42px;
   background-color: $color-dim-grey;
   mask-repeat: no-repeat;
   mask-position: center;

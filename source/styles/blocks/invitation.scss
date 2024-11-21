@@ -11,7 +11,7 @@
   }
 }
 
-.invitation__wrap-adress {
+.invitation__wrap-address {
   @media (max-width: $vp-768) {
   display: flex;
   justify-content: space-between;
@@ -26,8 +26,11 @@
   position: absolute;
   z-index: 1;
   display: flex;
-  justify-content: space-between;
-  padding: 60px 40px;
+  gap: 87px;
+  padding: 60px 78px 60px 80px;
+  background-color: $color-default-white;
+  margin-top: 95px;
+  margin-left: 110px;
  }
 }
 
@@ -39,7 +42,7 @@
   }
 }
 
-.invitation__adress {
+.invitation__address {
   @media (max-width: $vp-768) {
     & br {
       display: none;
@@ -53,7 +56,7 @@
   }
 }
 
-.adress__street {
+.address__street {
   @media (min-width: $vp-768) {
     text-align: right;
   }

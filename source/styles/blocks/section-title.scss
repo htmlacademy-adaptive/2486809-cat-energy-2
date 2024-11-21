@@ -10,11 +10,11 @@
     &--white {
      color: $color-default-white;
     }
+  }
   @media (min-width: $vp-768) {
     font-size: 60px;
     line-height: 60px;
     }
-   }
    &--size {
     font-size: 36px;
     line-height: 40px;

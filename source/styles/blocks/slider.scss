@@ -2,7 +2,7 @@
 --value: 50%;
 position: relative;
 width: 280px;
-height: 280px;
+height: 256px;
 @media (min-width: $vp-768) {
   width: 560px;
   height: 512px;
@@ -35,22 +35,22 @@ object-position: left;
   left: var(--value);
   width: 4px;
   height: 100%;
+  background-color: #666666;
   transform: translateX(-50%);
-  background-color: $color-dim-grey;
-  transition: background-color 0.3s;
   pointer-events: none;
   &::before {
-    content:"";
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     width: 40px;
     height: 40px;
-    background-image: url(../../images/thumb.svg);
+    background-image: url("../../images/slider/thumb-default.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
   }
 }
 
@@ -58,24 +58,18 @@ object-position: left;
   position: absolute;
   margin: 0;
   opacity: 0;
+  cursor: pointer;
   inset: 0;
   &:hover {
-    cursor: col-resize;
     & + .slider__range-visible {
-      color: #4f4f4f;
+      background-image: url("../../images/slider/thumb-hover.svg");
     }
   }
   &:active {
     & + .slider__range-visible {
-      color: #888888;
-    }
-  }
-  &:focus-visible {
-    & + .slider__range-visible {
-      outline: auto;
-      &::before {
-        outline: auto;
-      }
+      background-image: url("../../images/slider/thumb-pressed.svg.svg");
     }
   }
 }
+
+

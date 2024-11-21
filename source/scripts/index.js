@@ -1,8 +1,13 @@
 /* в этот файл добавляет скрипты*/
-const slider = document.querySelector('.slider');
-const range = document.querySelector('.slider__range-js');
-range.addEventListener('input', () => {
-  slider.style.setProperty('--value', `${range.value }%`);
+/* Бургер-меню */
+const navToggle = document.querySelector('.main-header__burger');
+const navList = document.querySelector('.navigation__list');
+
+navList.classList.remove('navigation__list--no-js');
+
+navToggle.addEventListener('click', () => {
+  navToggle.classList.toggle('main-header__burger--open');
+  navList.classList.toggle('navigation__list--is-opened');
 });
 
 
