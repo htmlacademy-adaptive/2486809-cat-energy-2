@@ -12,8 +12,10 @@
   }
 }
 
-.footer__map-frame {
+.footer__map{
   display: block;
+  background-size: cover;
+  background-position: center;
   background-image: image-set(
     url("../../images/mobile/location-mobile@1x.png"),
     url("../../images/mobile/location-mobile@2x.webp"));
@@ -79,6 +81,7 @@
   }
   @media (min-width: $vp-768) {
     display: block;
+    padding-top: 6px;
   }
 }
 

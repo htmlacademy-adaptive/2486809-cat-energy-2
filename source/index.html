@@ -6,6 +6,8 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicons.ico"><!-- 32x32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png"><!-- 180x180 -->
@@ -29,10 +31,10 @@
           </picture>
         </a>
         <nav class="main-header__nav  navigation">
-          <button class="main-header__burger main-header__burger--open" type="button">
+          <button class="main-header__burger" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="navigation__list navigation__list--is-opened navigation__list--no-js">
+          <ul class="navigation__list navigation__list--no-js">
             <li class="navigation__item">
               <a class="navigation__link navigation__link--color-decor" href="index.html" aria-current="page">Главная</a>
             </li>
@@ -52,8 +54,11 @@
           Занялся собой? Займись котом!
         </p>
         <picture>
+          <source width="552" height="499" type="image/webp" media="(min-width: 1300px)" srcset="images/desktop/index-can-desktop@1x.webp 1x, images/desktop/index-can-desktop@2x.webp 2x">
           <source width="552" height="499" type="image/png" media="(min-width: 1300px)" srcset="images/desktop/index-cat-desktop@1x.png 1x, images/desktop/index-cat-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/webp" media="(min-width: 768px)" srcset="images/tablet/index-cat-tablet@1x.webp 1x, images/tablet/index-cat-tablet@2x.webp 2x">
           <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/tablet/index-cat-tablet@1x.png 1x, images/tablet/index-cat-tablet@2x.png 2x">
+          <source width="280" height="270" type="image/webp" media="(min-width: 320px)" srcset="images/mobile/index-cat-mobile@1x.webp 1x, images/mobile/index-cat-mobile@2x.webp 2x">
           <img class="hero__image" src="images/mobile/index-cat-mobile@1x.png" srcset="images/mobile/index-cat-mobile@2x.png 2x" width="280" height="270" alt="Продукт Кэт энерджи со вкусом курицы">
         </picture>
         <a class="hero__button button" href="#">
@@ -163,10 +168,14 @@
             <div class="slider">
               <picture>
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-fat-tablet@1x.png 1x, images/tablet/cat-fat-tablet@2x.png 2x">
+                <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/tablet/cat-fat-tablet@1x.webp 1x, images/tablet/cat-fat-tablet@2x.webp 2x">
+                <source width="280" height="256" type="image/webp" media="(min-width: 320px)" srcset="images/mobile/cat-fat-mobile@1x.webp 1x, images/mobile/cat-fat-mobile@2x.webp 2x">
                 <img class="slider__img slider__img--before" src="images/mobile/cat-fat-mobile@1x.png" width="280" height="256" alt="Фото до: Кот на массе">
               </picture>
               <picture>
+                <source width="560" height="512" type="image/webp" media="(min-width: 768px)" srcset="images/tablet/cat-small-tablet@1x.webp 1x, images/tablet/cat-small-tablet@2x.webp 2x">
                 <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet/cat-small-tablet@1x.png 1x, images/tablet/cat-small-tablet@2x.png 2x">
+                <source width="280" height="256" type="image/webp" media="(min-width: 320px)" srcset="images/mobile/cat-fat-mobile@1x.webp 1x, images/mobile/cat-small-mobile@2x.webp 2x">
                 <img class="slider__img slider__img--after" src="images/mobile/cat-small-mobile@1x.png" width="280" height="256" alt="Фото после: Худой код">
               </picture>
               <label class="visually-hidden" for="slider-range">Показать картинку до или после</label>

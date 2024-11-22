@@ -23,8 +23,8 @@
   @media (min-width: $vp-768) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 30px;
-    margin-bottom: 92px;
+    gap: 77px 59px;
+    margin-bottom: 47px;
       &::after {
        content: "";
        background-color: $color-whisper-2;
