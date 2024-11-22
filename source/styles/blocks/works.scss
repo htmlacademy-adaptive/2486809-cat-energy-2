@@ -2,6 +2,7 @@
 .works__title {
   @media (max-width: $vp-768) {
     margin-bottom: 40px;
+    text-align: left;
     }
   @media (min-width: $vp-768) {
     margin-bottom: 72px;
@@ -90,8 +91,8 @@
           background-size: 30px 32px;
           width: 30px;
           height: 32px;
-          top: 14px;
-          left: 15px;
+          top: 12px;
+          left: 16px;
         }
       }
     }
@@ -154,4 +155,12 @@
 
   .works__card-text {
   margin: 0;
+}
+
+.works__card-text {
+  @media (max-width: $vp-768) {
+    & br {
+      display: none;
+    }
+  }
 }

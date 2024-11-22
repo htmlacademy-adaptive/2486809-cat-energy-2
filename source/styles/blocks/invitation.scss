@@ -14,8 +14,8 @@
 .invitation__wrap-address {
   @media (max-width: $vp-768) {
   display: flex;
-  justify-content: space-between;
-  padding: 26px 0;
+  gap: 17px;
+  padding: 26px 20px;
   }
   @media (min-width: $vp-768) {
   display: flex;

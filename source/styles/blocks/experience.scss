@@ -21,7 +21,7 @@
 
 .experience__section-title {
   padding-top: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   text-align: left;
   @media (min-width: $vp-768) {
     padding-top: 45px;
@@ -40,7 +40,7 @@
 .experience__text {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   @media (min-width: $vp-768) {
   }
   @media (min-width: $vp-1440) {
@@ -73,12 +73,15 @@ padding: 0;
 display: flex;
 column-gap: 32px;
 justify-content: space-between;
-@media (min-width: $vp-768) {
-column-gap: 43px;
-}
-@media (min-width: $vp-1440) {
+  @media (max-width: $vp-768) {
+   margin-bottom: 20px;
+  }
+  @media (min-width: $vp-768) {
+  column-gap: 43px;
+  }
+  @media (min-width: $vp-1440) {
  justify-content: flex-start;
-}
+  }
 }
 
 .experience__item {
@@ -146,6 +149,9 @@ column-gap: 43px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  @media (max-width: $vp-768) {
+    margin: 20px;
+  }
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 20px;

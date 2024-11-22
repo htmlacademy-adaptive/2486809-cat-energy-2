@@ -6,9 +6,9 @@
   @media (max-width: $vp-768) {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 22px;
     padding-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     }
   @media (min-width: $vp-768) {
     display: flex;
@@ -29,7 +29,7 @@
 .program__item {
   background-color: $color-white-smoke;
   @media (max-width: $vp-768) {
-    padding: 30px 33px 18px 20px;
+    padding: 30px 33px 20px 20px;
     }
   @media (min-width: $vp-768) {
     padding: 77px 316px 57px 52px;
@@ -211,7 +211,7 @@
     font-size: 24px;
     line-height: 37px;
     margin-left: 70px;
-    margin-bottom: 22px;
+    margin-bottom: 32px;
   }
   @media (min-width: $vp-768) {
     font-size: 36px;
@@ -233,7 +233,7 @@
   padding: 0;
   position: relative;
   @media (max-width: $vp-768) {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
     &--decor-line {
     &::after {
       content: "";
@@ -241,7 +241,7 @@
       width: 100%;
       height: 1px;
       position: absolute;
-      bottom: -23px;
+      bottom: -21px;
       left:0;
     }
    }

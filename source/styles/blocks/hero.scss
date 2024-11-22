@@ -65,6 +65,11 @@
 }
 
 .hero__button {
+  @media (max-width: $vp-768) {
+    width: fit-content;
+    padding: 10px 30px;
+    width: 100%;
+    }
   @media (min-width: $vp-768) {
     margin: -575px 0 526px 90px;
     width: fit-content;

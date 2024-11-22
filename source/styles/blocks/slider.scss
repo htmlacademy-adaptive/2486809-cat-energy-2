@@ -58,16 +58,22 @@ object-position: left;
   position: absolute;
   margin: 0;
   opacity: 0;
-  cursor: pointer;
   inset: 0;
   &:hover {
-    & + .slider__range-visible {
+    & + .slider__range-visible{
+      background-color: $color-apple;
+    }
+    & + .slider__range-visible::before {
       background-image: url("../../images/slider/thumb-hover.svg");
     }
   }
   &:active {
-    & + .slider__range-visible {
-      background-image: url("../../images/slider/thumb-pressed.svg.svg");
+    & + .slider__range-visible{
+      background-color: $color-limeade;
+      opacity: 0.6;
+    }
+    & + .slider__range-visible::before {
+      background-image: url("../../images/slider/thumb-pressed.svg");
     }
   }
 }
