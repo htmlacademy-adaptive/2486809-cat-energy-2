@@ -3,9 +3,11 @@
   padding-top: 18px;
   display: flex;
   flex-direction: column;
+
   @media (min-width: $vp-768) {
     padding: 80px 70px;
   }
+
   @media (min-width: $vp-1440) {
     padding-bottom: 104px;
     padding-top: 96px;
@@ -16,11 +18,13 @@
   font-weight: $fw-regular;
   position: relative;
   width: fit-content;
+
   &::before,
   &::after {
     position: absolute;
     content: "";
   }
+
   &::before {
     width: 100vw;
     height: 2px;
@@ -30,6 +34,7 @@
     right: 0;
     z-index: -1;
   }
+
   &::after {
     top: 0;
     left: -30px;
@@ -44,20 +49,23 @@
     font-size: 24px;
     line-height: 24px;
   }
+
   @media (min-width: $vp-768) {
     margin-bottom: 66px;
     font-size: 32px;
     line-height: 32px;
   }
+
   @media (min-width: $vp-1440) {
     margin-bottom: 72px;
     font-size: 40px;
     line-height: 40px;
+
     &::after {
       width: calc(100% + 80px);
       left: -20px;
-   }
-}
+    }
+  }
 }
 
 .newsletter__description {
@@ -130,4 +138,3 @@
     width: fit-content;
   }
 }
-

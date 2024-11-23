@@ -5,6 +5,13 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
+
+  @media (max-width: $vp-768) {
+    & br {
+      display: none;
+    }
+  }
+
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 26px;
@@ -13,32 +20,26 @@
 
 .invitation__wrap-address {
   @media (max-width: $vp-768) {
-  display: flex;
-  gap: 17px;
-  padding: 26px 20px;
+    display: flex;
+    gap: 17px;
+    padding: 26px 20px;
   }
-  @media (min-width: $vp-768) {
-  display: flex;
-  justify-content: space-between;
-  padding: 62px 70px;
- }
- @media (min-width: $vp-1440) {
-  position: absolute;
-  z-index: 1;
-  display: flex;
-  gap: 87px;
-  padding: 60px 78px 60px 80px;
-  background-color: $color-default-white;
-  margin-top: 95px;
-  margin-left: 110px;
- }
-}
 
-.invitation__title {
-  @media (max-width: $vp-768) {
-    & br {
-      display: none;
-    }
+  @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: space-between;
+    padding: 62px 70px;
+  }
+
+  @media (min-width: $vp-1440) {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    gap: 87px;
+    padding: 60px 78px 60px 80px;
+    background-color: $color-default-white;
+    margin-top: 95px;
+    margin-left: 110px;
   }
 }
 
@@ -48,11 +49,12 @@
       display: none;
     }
   }
+
   @media (min-width: $vp-768) {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }
 

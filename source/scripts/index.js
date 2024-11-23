@@ -9,5 +9,3 @@ navToggle.addEventListener('click', () => {
   navToggle.classList.toggle('main-header__burger--open');
   navList.classList.toggle('navigation__list--is-opened');
 });
-
-

@@ -1,6 +1,5 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/mixins.scss";
 @import "./common/fonts.scss";
 @import "./common/global.scss";
 @import "./common/visually-hidden.scss";
@@ -9,20 +8,17 @@
 @import "./blocks/container.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
-@import "./blocks/main-content.scss";
 @import "./blocks/section-title.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/program.scss";
 @import "./blocks/works.scss";
 @import "./blocks/experience.scss";
-@import "./blocks/cost.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/invitation.scss";
 @import "./blocks/address.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/catalog.scss";
-@import "./blocks/card.scss";
 @import "./blocks/additional-products.scss";
 @import "./blocks/product-cards.scss";
 @import "./blocks/button.scss";
@@ -30,6 +26,4 @@
 @import "./blocks/navigation.scss";
 @import "./blocks/section-text.scss";
 @import "./blocks/show-more.scss";
-@import "./blocks/additional-products.scss";
 @import "./blocks/additional-cards.scss"
-

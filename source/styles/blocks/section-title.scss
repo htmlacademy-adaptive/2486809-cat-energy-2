@@ -5,24 +5,27 @@
   line-height: 36px;
   margin: 0;
   padding: 0;
-  @media (max-width : $vp-768) {
+
+  @media (max-width: $vp-768) {
     text-align: center;
+
     &--white {
-     color: $color-default-white;
+      color: $color-default-white;
     }
   }
+
   @media (min-width: $vp-768) {
     font-size: 60px;
     line-height: 60px;
-    }
-   &--size {
+  }
+
+  &--size {
     font-size: 36px;
     line-height: 40px;
+
     @media (min-width: $vp-768) {
       font-size: 60px;
       line-height: 60px;
-      }
-   }
+    }
+  }
 }
-
-

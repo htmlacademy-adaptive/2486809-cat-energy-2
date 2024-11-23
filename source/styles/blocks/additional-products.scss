@@ -2,11 +2,13 @@
   position: relative;
   width: fit-content;
   font-weight: $fw-regular;
+
   &::before,
   &::after {
     position: absolute;
     content: "";
   }
+
   &::before {
     width: 100vw;
     height: 2px;
@@ -16,6 +18,7 @@
     right: 0;
     z-index: -1;
   }
+
   &::after {
     top: 0;
     left: -30px;
@@ -24,20 +27,24 @@
     height: 100%;
     background-color: $color-default-white;
   }
+
   @media (max-width: $vp-768) {
     margin-bottom: 36px;
     font-size: 24px;
     line-height: 24px;
   }
+
   @media (min-width: $vp-768) {
     margin-bottom: 80px;
     font-size: 32px;
     line-height: 32px;
   }
+
   @media (min-width: $vp-1440) {
     margin-bottom: 80px;
     font-size: 40px;
     line-height: 40px;
+
     &::after {
       width: calc(100% + 80px);
       left: -20px;
