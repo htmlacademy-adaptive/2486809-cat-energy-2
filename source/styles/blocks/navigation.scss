@@ -1,0 +1,131 @@
+.navigation {
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $vp-768) {
+    flex-flow: row wrap;
+    gap: 33px;
+  }
+
+  @media (min-width: $vp-1440) {
+    flex-flow: row wrap;
+    color: $color-default-white;
+    gap: 33px;
+  }
+}
+
+.navigation__list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (max-width: $vp-768) {
+    z-index: 3;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    right: -20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: $color-default-white;
+  }
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    padding-top: 35px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-top: 37px;
+    padding-right: 2px;
+  }
+}
+
+.navigation__list--is-opened {
+  @media (max-width: $vp-768) {
+    display: block;
+  }
+}
+
+.navigation__list--no-js {
+  @media (max-width: $vp-768) {
+    display: block;
+  }
+}
+
+.navigation__item {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: $vp-768) {
+    border-top: solid 1px $color-whisper;
+  }
+}
+
+.navigation__item:last-child {
+  @media (max-width: $vp-768) {
+    border-bottom: solid 1px $color-whisper;
+  }
+}
+
+.navigation__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-default-black;
+
+  @media (max-width: $vp-768) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    z-index: 10;
+  }
+
+  @media (min-width: $vp-768) {
+    font-size: 18px;
+    line-height: 24px;
+    position: relative;
+    padding-top: 2px;
+
+    &[aria-current="page"]::after {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: $color-apple;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    color: $color-default-white;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--color-decor[aria-current="page"]::after {
+      background-color: $color-default-white;
+    }
+
+    &--catalog {
+      color: $color-default-black;
+    }
+
+    &--catalog[aria-current="page"]::after {
+      background-color: $color-apple;
+    }
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

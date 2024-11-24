@@ -1,0 +1,13 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $ff-primary;
+  font-weight: $fw-regular;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-default-white;
+  border: none;
+  background-color: $color-apple;
+  cursor: pointer;
+}
