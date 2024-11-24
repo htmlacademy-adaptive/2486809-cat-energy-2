@@ -3,13 +3,13 @@
   flex-direction: column;
   gap: 0;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 21px;
   background-image: none;
 
   @media (min-width: $vp-768) {
     padding-top: 48px;
     padding-bottom: 32px;
-    margin-top: 83px;
+    margin-top: 68px;
     border: 2px solid $color-white-smoke;
   }
 }
@@ -20,16 +20,6 @@
   width: 30px;
   height: 30px;
 
-  @media (min-width: $vp-768) {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 50px;
-  }
-
-  @media (min-width: $vp-1440) {
-    margin-bottom: 38px;
-  }
-
   &::before,
   &::after {
     content: "";
@@ -37,20 +27,48 @@
     background-color: #d3d3d3;
   }
 
-  &::before {
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    transform: translateY(-50%);
+  @media (max-width: $vp-768) {
+    &::before {
+      width: 100%;
+      height: 2px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 53%;
+      transform: translateX(-50%);
+    }
   }
 
-  &::after {
-    left: 50%;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    transform: translateX(-50%);
+  @media (min-width: $vp-768) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 50px;
+
+    &::before {
+      width: 100%;
+      height: 2px;
+      top: 53%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 51%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 38px;
   }
 }
 
@@ -72,7 +90,7 @@
   }
 
   @media (min-width: $vp-1440) {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
   }
 }
 
@@ -82,12 +100,22 @@
   line-height: 16px;
   text-align: center;
   color: $color-charcoal;
-  margin: 0 0 21px;
+  margin: 0 0 19px;
+
+  @media (max-width: $vp-768) {
+    & br {
+      display: none;
+    }
+  }
 
   @media (min-width: $vp-768) {
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 90px;
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 87px;
   }
 }
 

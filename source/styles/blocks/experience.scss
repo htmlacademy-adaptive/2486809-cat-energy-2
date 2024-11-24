@@ -21,7 +21,7 @@
 }
 
 .experience__section-title {
-  padding-top: 25px;
+  padding-top: 27px;
   margin-bottom: 44px;
   text-align: left;
 
@@ -42,7 +42,11 @@
 .experience__text {
   margin: 0;
   padding: 0;
-  margin-bottom: 55px;
+  margin-bottom: 17px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 56px;
+  }
 
   @media (min-width: $vp-1440) {
     display: flex;
@@ -64,7 +68,8 @@
     flex-direction: column;
     grid-column: 1/2;
     grid-row: 3/4;
-    gap: 55px;
+    gap: 58px;
+    margin-bottom: 75px;
   }
 }
 
@@ -180,7 +185,7 @@
     font-size: 20px;
     line-height: 20px;
     display: flex;
-    gap: 63px;
+    gap: 66px;
     flex-direction: row;
     align-items: flex-start;
     padding: 0;

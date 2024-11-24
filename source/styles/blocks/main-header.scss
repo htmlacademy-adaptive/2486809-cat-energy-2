@@ -48,7 +48,7 @@
         content: "";
         background-image: url("../../images/desktop/index-background-desktop-full@2x.jpg");
         background-size: cover;
-        background-position: top left;
+        background-position: 2px 2px;
         width: 50%;
         height: 100%;
         top: 0;
@@ -79,6 +79,8 @@
   @media (min-width: $vp-1440) {
     gap: 50px;
     align-items: flex-start;
+    padding-top: 32px;
+    padding-right: 0;
   }
 }
 

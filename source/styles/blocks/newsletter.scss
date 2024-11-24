@@ -1,6 +1,5 @@
 .newsletter__container {
   padding-bottom: 40px;
-  padding-top: 18px;
   display: flex;
   flex-direction: column;
 
@@ -18,6 +17,7 @@
   font-weight: $fw-regular;
   position: relative;
   width: fit-content;
+  margin: 0;
 
   &::before,
   &::after {
@@ -29,7 +29,7 @@
     width: 100vw;
     height: 2px;
     background-color: $color-apple;
-    top: 50%;
+    top: 79%;
     box-shadow: 100vw 0 0 $color-apple;
     right: 0;
     z-index: -1;
@@ -45,6 +45,7 @@
   }
 
   @media (max-width: $vp-768) {
+    padding-top: 40px;
     margin-bottom: 32px;
     font-size: 24px;
     line-height: 24px;
@@ -54,16 +55,21 @@
     margin-bottom: 66px;
     font-size: 32px;
     line-height: 32px;
+
+    &::before {
+      top: 47%;
+    }
   }
 
   @media (min-width: $vp-1440) {
     margin-bottom: 72px;
     font-size: 40px;
     line-height: 40px;
+    padding-left: 41px;
 
     &::after {
-      width: calc(100% + 80px);
-      left: -20px;
+      width: calc(100% + 41px);
+      left: 0;
     }
   }
 }
@@ -76,10 +82,12 @@
     font-size: 24px;
     line-height: 32px;
     width: 650px;
+    padding-right: 23px;
   }
 
   @media (min-width: $vp-1440) {
     width: fit-content;
+    padding-right: 0;
   }
 }
 

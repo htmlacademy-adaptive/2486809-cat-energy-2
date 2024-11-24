@@ -14,6 +14,7 @@
   @media (min-width: $vp-1440) {
     white-space: pre-line;
     padding-top: 110px;
+    padding-left: 79px;
   }
 }
 
@@ -33,15 +34,18 @@
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 21px;
-    padding-left: 90px;
+    margin-bottom: 50px;
+    padding-left: 79px;
     color: $color-default-black;
   }
 }
 
 .hero__image {
   display: block;
-  margin: 0 auto;
+
+  @media (max-width: $vp-768) {
+    margin: 0 auto 3px;
+  }
 
   @media (min-width: $vp-768) {
     width: 709px;
@@ -53,8 +57,8 @@
     width: 552px;
     height: 499px;
     position: absolute;
-    top: 3%;
-    left: 34%;
+    top: 5%;
+    left: 37%;
   }
 }
 
@@ -70,7 +74,7 @@
 
 .hero__button {
   @media (max-width: $vp-768) {
-    padding: 10px 30px;
+    padding: 8px 30px;
     width: 100%;
   }
 
@@ -86,7 +90,7 @@
     padding: 14px 27px;
     font-size: 20px;
     line-height: 26px;
-    margin: 0 0 184px 90px;
+    margin: 0 0 184px 81px;
     align-self: flex-start;
     z-index: 2;
     max-width: 244px;
