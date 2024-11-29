@@ -28,6 +28,7 @@
   @media (min-width: $vp-768) {
     padding-top: 45px;
     margin-bottom: 60px;
+    padding-left: 1px;
   }
 
   @media (min-width: $vp-1440) {
@@ -68,7 +69,7 @@
     flex-direction: column;
     grid-column: 1/2;
     grid-row: 3/4;
-    gap: 58px;
+    gap: 56px;
     margin-bottom: 75px;
   }
 }
@@ -152,10 +153,12 @@
 
     &--weight {
       width: 114px;
+      padding-top: 2px;
     }
 
     &--days {
       width: 142px;
+      padding-top: 2px;
     }
   }
 }

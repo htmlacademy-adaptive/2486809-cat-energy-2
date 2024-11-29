@@ -17,7 +17,7 @@
 <body class="page__body">
   <header class="main-header main-header--on-content main-header--color">
     <div class="container">
-      <div class="main-header__container">
+      <div class="main-header__container main-header__container--no-js">
         <a class="main-header__logo" href="index.html" aria-current="page">
           <picture>
             <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop.svg">
@@ -27,11 +27,11 @@
           <picture>
             <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop-text.svg">
             <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/tablet/logo-tablet/logo-tablet-text.svg">
-            <img class="main-header__logo-text" src="images/mobile/logo-mobile/logo-mobile-text.svg" width="101" height="18" alt="Логотип Cat Energy текст">
+            <img class="main-header__logo-text main-header__logo-text--no-js" src="images/mobile/logo-mobile/logo-mobile-text.svg" width="101" height="18" alt="Логотип Cat Energy текст">
           </picture>
         </a>
-        <nav class="main-header__nav  navigation">
-          <button class="main-header__burger" type="button">
+        <nav class="main-header__nav main-header__nav--no-js navigation">
+          <button class="main-header__burger main-header__burger--no-js" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="navigation__list navigation__list--no-js">
@@ -233,7 +233,9 @@
       <div class="footer__copyright-wrapper footer__wrapper-border">
         <a class="footer__copyright" href="#">
           <span class="footer__copyright-text">HTML Academy</span>
-          <img class="footer__copyright-logo" src="images/html-academy.svg" alt="HTML Academy logo" width="27" height="24">
+          <svg viewBox="0 0 27 35" width="27" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="m13.64.52-.14-.02-13.5 1.4v24.61l13.5 7.99 13.5-7.99v-24.6l-13.36-1.4Zm11.6 25-11.74 6.94-11.73-6.94v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83v-5.21l3.62-2.15v10.26Zm0-11.57-3.23 1.88-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19-11.62-6.87 11.63-6.96 11.8 6.83Zm0-1.22-11.8-6.92-11.67 6.91v-9.23l11.73-1.23 11.73 1.23v9.24Z" fill="#currentColor" />
+          </svg>
         </a>
       </div>
     </div>

@@ -13,8 +13,8 @@
 
   @media (min-width: $vp-1440) {
     white-space: pre-line;
-    padding-top: 110px;
-    padding-left: 79px;
+    padding-top: 108px;
+    padding-left: 80px;
   }
 }
 
@@ -34,9 +34,14 @@
   @media (min-width: $vp-768) {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 50px;
-    padding-left: 79px;
+    margin-bottom: 19px;
+    padding-left: 91px;
     color: $color-default-black;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 52px;
+    padding-left: 81px;
   }
 }
 
@@ -50,7 +55,7 @@
   @media (min-width: $vp-768) {
     width: 709px;
     height: 609px;
-    margin: -2px auto;
+    margin: 0 auto;
   }
 
   @media (min-width: $vp-1440) {
@@ -79,7 +84,7 @@
   }
 
   @media (min-width: $vp-768) {
-    margin: -575px 0 526px 90px;
+    margin: -579px 0 526px 91px;
     padding: 14px 26px;
     max-width: 242px;
     font-size: 20px;

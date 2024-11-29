@@ -16,8 +16,8 @@
 <body class="page__body">
   <header class="main-header main-header--color">
     <div class="container">
-      <div class="main-header__container">
-        <a class="main-header__logo" href="index.html" aria-current="page">
+      <div class="main-header__container main-header__container--no-js">
+        <a class="main-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop.svg">
             <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/tablet/logo-tablet/logo-tablet.svg">
@@ -26,11 +26,11 @@
           <picture>
             <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop-text.svg">
             <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/tablet/logo-tablet/logo-tablet-text.svg">
-            <img class="main-header__logo-text" src="images/mobile/logo-mobile/logo-mobile-text.svg" width="101" height="18" alt="Логотип Cat Energy текст">
+            <img class="main-header__logo-text main-header__logo-text--no-js" src="images/mobile/logo-mobile/logo-mobile-text.svg" width="101" height="18" alt="Логотип Cat Energy текст">
           </picture>
         </a>
-        <nav class="main-header__nav  navigation">
-          <button class="main-header__burger" type="button">
+        <nav class="main-header__nav main-header__nav--no-js navigation">
+          <button class="main-header__burger main-header__burger--no-js" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="navigation__list navigation__list--no-js">
@@ -49,7 +49,7 @@
     </div>
 
   </header>
-  <main class="main-container">
+  <main class="main-content">
     <section class="product-cards">
       <div class="product-cards__container container">
         <h1 class="product-cards__title section-title">Каталог продукции</h1>
@@ -251,7 +251,7 @@
             <a class="product-cards__button button" href="#">Заказать</a>
           </article>
           <!-- Показать еще -->
-          <div class="product-cards__item show-more">
+          <div class="product-cards__item product-cards__item-show-more">
             <div class="show-more__plus"></div>
             <h2 class="show-more__title">Показать еще 100500 товаров</h2>
             <p class="show-more__description">На самом деле вкусов<br> гораздо больше!</p>

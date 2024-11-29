@@ -10,4 +10,28 @@
   border: none;
   background-color: $color-apple;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-limeade;
+  }
+
+  &:active {
+    color: rgba($color-default-white, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    background-color: $color-very-light-grey;
+  }
+
+  &--show_all {
+    &:hover {
+      background-color: $color-whisper-2;
+    }
+
+    &:active {
+      background-color: $color-whisper-2;
+      color: rgba($color-charcoal, 0.8);
+    }
+  }
 }

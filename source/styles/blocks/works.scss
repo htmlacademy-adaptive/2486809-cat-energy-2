@@ -10,6 +10,7 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 72px;
+    padding-left: 1px;
   }
 }
 
@@ -45,7 +46,7 @@
 
   @media (min-width: $vp-1440) {
     margin-bottom: 69px;
-    column-gap: 80px;
+    column-gap: 79px;
 
     &::after {
       content: none;
@@ -119,6 +120,7 @@
     counter-increment: card-counter;
 
     &::before {
+      margin-left: 1px;
       width: 80px;
       height: 80px;
     }
@@ -160,7 +162,8 @@
 
     &--one::before {
       content: "1";
-      right: 15%;
+      right: 10%;
+      top: -75%;
     }
 
     &--two::before {

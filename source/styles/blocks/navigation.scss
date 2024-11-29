@@ -1,5 +1,4 @@
 .navigation {
-
   display: flex;
   flex-direction: column;
 
@@ -55,6 +54,7 @@
 .navigation__list--no-js {
   @media (max-width: $vp-768) {
     display: block;
+    position: static;
   }
 }
 
