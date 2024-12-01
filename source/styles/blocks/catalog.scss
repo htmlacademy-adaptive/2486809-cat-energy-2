@@ -1,6 +1,23 @@
+
 .catalog__title {
-  font-family: "Oswald", sans-serif;
-  font-size: 60px;
-  line-height: 60px;
-  color: #000000;
+  @media (max-width: $vp-768) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 27px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $vp-768) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 27px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $vp-1440) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 74px;
+    margin-bottom: 84px;
+  }
 }
