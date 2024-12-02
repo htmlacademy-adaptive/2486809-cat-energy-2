@@ -1,0 +1,132 @@
+.show-more__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-top: 25px;
+  padding-bottom: 21px;
+  background-image: none;
+
+  @media (min-width: $vp-768) {
+    padding-top: 48px;
+    padding-bottom: 32px;
+    margin-top: 68px;
+    border: 2px solid $color-white-smoke;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-top: 62px;
+    padding-top: 51px;
+  }
+}
+
+.show-more__plus {
+  margin-bottom: 24px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #d3d3d3;
+  }
+
+  @media (max-width: $vp-768) {
+    &::before {
+      width: 100%;
+      height: 2px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      width: 2px;
+      height: 100%;
+      top: 0;
+      left: 53%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 49px;
+
+    &::before {
+      width: 100%;
+      height: 2px;
+      top: 48%;
+      left: 1px;
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      width: 2px;
+      height: 100%;
+      top: -2px;
+      left: 53%;
+      transform: translateX(-50%);
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 39px;
+  }
+}
+
+.show-more__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  position: relative;
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 170px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 25px;
+  }
+}
+
+.show-more__description {
+  font-family: $ff-secondary;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $color-charcoal;
+  margin: 0 0 19px;
+
+  @media (max-width: $vp-768) {
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 79px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 89px;
+  }
+}
+
+.show-more__button {
+  padding: 10px;
+  width: 100%;
+  background-color: $color-white-smoke;
+  color: $color-charcoal;
+}

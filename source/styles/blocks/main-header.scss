@@ -1,3 +1,233 @@
 .main-header {
-  padding: 10px 15px;
+  &--on-content {
+    position: relative;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 65px;
+      width: 100%;
+      height: 56%;
+      z-index: -1;
+    }
+
+    &::after {
+      background-color: $color-apple;
+      opacity: 0.85;
+      pointer-events: none;
+    }
+
+    &::before {
+      background-image: url("../../images/mobile/index-background-mobile@2x.jpg");
+      background-color: #4e4d4d;
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    &::after,
+    &::before {
+      content: none;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    &--on-content {
+      &::after {
+        content: "";
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+      }
+
+      &::before {
+        content: "";
+        background-image: url("../../images/desktop/index-background-desktop-full@2x.jpg");
+        background-size: cover;
+        background-position: 2px 2px;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.main-header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: $vp-768) {
+    padding-top: 13px;
+    padding-bottom: 14px;
+  }
+
+  @media (min-width: $vp-768) {
+    gap: 50px;
+    align-items: flex-start;
+    padding-top: 1px;
+    padding-right: 6px;
+  }
+
+  @media (min-width: $vp-1440) {
+    gap: 50px;
+    align-items: flex-start;
+    padding-top: 32px;
+    padding-right: 0;
+  }
+}
+
+.main-header__container--no-js {
+  @media (max-width: $vp-768) {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.main-header__logo {
+  @media (max-width: $vp-768) {
+    display: flex;
+    align-items: center;
+    gap: 56px;
+  }
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    flex-shrink: 0;
+    padding-top: 25px;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-top: 25px;
+    gap: 14px;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo-image {
+  display: block;
+}
+
+.main-header__logo-text {
+  max-width: initial;
+  display: block;
+
+  @media (max-width: $vp-768) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.main-header__logo-text--no-js {
+  @media (max-width: $vp-768) {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+.main-header__nav--no-js {
+  @media (max-width: $vp-768) {
+    padding-top: 14px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+}
+
+.main-header__burger {
+  @media (max-width: $vp-768) {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $color-default-black;
+      transform-origin: left;
+      transition:
+        box-shadow 0.3s ease 0s,
+        transform 0.3s ease 0s,
+        left 0.3s ease 0s,
+        color 0.3s ease 0s;
+    }
+
+    &::before {
+      top: 2px;
+    }
+
+    &::after {
+      top: 10px;
+      box-shadow: 0 8px 0 currentColor;
+    }
+
+    &--open::before {
+      left: 4px;
+      transform: rotate(46deg);
+    }
+
+    &--open::after {
+      left: 4px;
+      top: 19px;
+      transform: rotate(-45deg);
+      box-shadow: 0 0 0 transparent;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &:active {
+      opacity: 0.9;
+    }
+
+    &--no-js {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+}
+
+.main-header__hero-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $vp-1440) {
+    position: relative;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
