@@ -17,39 +17,35 @@
 <body class="page__body">
   <header class="main-header main-header--on-content main-header--color">
     <div class="container">
-      <div class="main-header__container main-header__container--no-js">
-        <a class="main-header__logo" href="index.html" aria-current="page">
-          <picture>
-            <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/tablet/logo-tablet/logo-tablet.svg">
-            <img class="main-header__logo-image" src="images/mobile/logo-mobile/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-          </picture>
-          <picture>
-            <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop-text.svg">
-            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/tablet/logo-tablet/logo-tablet-text.svg">
-            <img class="main-header__logo-text main-header__logo-text--no-js" src="images/mobile/logo-mobile/logo-mobile-text.svg" width="101" height="18" alt="Логотип Cat Energy текст">
-          </picture>
-        </a>
-        <nav class="main-header__nav main-header__nav--no-js navigation">
-          <button class="main-header__burger main-header__burger--no-js" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="navigation__list navigation__list--no-js">
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--color-decor" href="index.html" aria-current="page">Главная</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="main-header__hero-wrapper hero">
-        <h1 class="hero__title section-title section-title--white">Функциональное
-          питание для котов</h1>
+      <a class="main-header__logo" href="#">
+        <img class="main-header-image" src="../source/images/logo-mobile.svg" width="190" height="38" alt="Логотип Cat Energy">
+      </a>
+      <nav class="navigation">
+        <button class="navigation__toggle" type="button">
+          <span class="vissually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation-list">
+          <li class="navigation-list__item navigation-list__item--current">
+            <a class="navigation__link" href="#">Главная</a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    <h1 class="vissually-hidden">Подбор правильного питания для котов и кошек</h1>
+    <!-- Секция с главным предложением  -->
+    <section class="hero">
+      <div class="container">
+        <h2 class="hero__section-title">
+          Функциональное питание для котов
+        </h2>
         <p class="hero__slogan">
           Занялся собой? Займись котом!
         </p>
@@ -189,57 +185,47 @@
     </section>
     <section class="invitation">
       <div class="container">
-        <div class="invitation__wrap-address">
-          <h2 class="visually-hidden">Раздел с приглашениме для дилеров и адресом</h2>
-          <p class="invitation__title">Приглашаем <span class="span-wrap">к&nbsp;сотрудничеству</span> дилеров!</p>
-          <address class="invitation__address address">
-            <span class="address__street"><span class="span-wrap">ул. Большая</span> Конюшенная, д. 19/8</span>
-            <span class="address__city span-wrap">Санкт-Петербург</span>
-          </address>
+        <h2 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <div class="invitation__adress adress">
+          <p class="adress__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="adress__city">Санкт-Петербург</p>
+        </div>
+        <div class="map">
+          <picture>
+            <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/desktop/location-desktop@1x.png 1x, images/desktop/location-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/tablet/location-tablet@1x.png 1x, images/tablet/location-tablet@2x.png 2x">
+            <img class="map__img" src="../source/images/mobile/location-mobile@1x.png" alt="Карта офиса" width="768" height="400">
+          </picture>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__map">
-      <iframe class="footer__map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037915709824!2d30.318176499962213!3d59.93871641023618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1732111343958!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="container footer__wrapper">
-      <div class="footer__wrapper-border">
-        <a class="footer__logo-cat-energy" href="index.html">
-          <span class="visually-hidden">Cat Energy</span>
-          <svg viewBox="0 0 128 25" width="128" height="25" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.62 22.46a9.43 9.43 0 0 1-1.6-5.72v-8.48a9.56 9.56 0 0 1 1.5-5.82c1.1-1.33 2.8-1.94 5.31-1.94 2.5 0 4.1.61 5.1 1.74a7.43 7.43 0 0 1 1.51 5v2.04h-4.9v-2.35a5.4 5.4 0 0 0-.3-2.04 1.42 1.42 0 0 0-1.4-.82c-.71 0-1.21.2-1.41.72a6.72 6.72 0 0 0-.3 2.25v10.92a4.3 4.3 0 0 0 .4 2.15c.2.5.7.71 1.4.71s1.1-.2 1.3-.71c.23-.7.33-1.42.3-2.15v-2.45h4.91v2.05a7.92 7.92 0 0 1-1.5 5.1c-1 1.23-2.7 1.84-5.1 1.84-2.41-.1-4.22-.71-5.22-2.04Zm17.73-21.66h5.7l4.21 23.3h-4.6l-.8-4.91h-3.31l-.8 4.9h-4.7l4.3-23.28Zm4.1 15.33-1.2-9.1-1.2 9.1h2.4Zm9.32-11.44h-3.4v-3.88h11.9v3.77h-3.4v19.51h-5.1v-19.4Zm17.63-3.89h8.8v2.46h-5.7v7.66h4.6v2.35h-4.6v8.57h5.7v2.35h-8.9v-23.38h.1Zm11.4 0h2.21l6.51 15.43v-15.42h2.6v23.28h-2l-6.6-15.93v15.93h-2.71v-23.28Zm14.33 0h8.81v2.46h-5.7v7.66h4.6v2.35h-4.6v8.57h5.7v2.35h-8.81v-23.38Zm11.41 0h4.61a7.9 7.9 0 0 1 5.1 1.44c1.1.91 1.6 2.55 1.6 4.7 0 2.96-.9 4.8-2.8 5.4l3.21 11.65h-3.1l-3-10.93h-2.51v10.93h-3.2v-23.18h.1Zm4.41 10.01c1.03.1 2.06-.2 2.9-.81.6-.51.9-1.53.9-3.07a6.72 6.72 0 0 0-.3-2.24 2.58 2.58 0 0 0-1.1-1.23 4.49 4.49 0 0 0-2.2-.4h-1.4v7.65h1.2v.1Zm10.91 11.55a10.49 10.49 0 0 1-1.4-5.93v-7.76a17 17 0 0 1 .5-4.4c.34-1.06 1-2 1.9-2.65 1.12-.67 2.41-1 3.71-.92 2.1 0 3.6.51 4.5 1.64a7.93 7.93 0 0 1 1.41 5.1v.82h-3v-.71c0-.86-.07-1.71-.2-2.56a2.05 2.05 0 0 0-.8-1.32 3.05 3.05 0 0 0-1.9-.51 2.96 2.96 0 0 0-2.01.6 2.3 2.3 0 0 0-.8 1.64c-.13.92-.2 1.84-.2 2.76v8.68a9.43 9.43 0 0 0 .6 3.88c.4.82 1.2 1.12 2.4 1.12a2.38 2.38 0 0 0 2.4-1.22c.53-1.3.77-2.69.7-4.09v-1.63h-2.9v-2.35h5.81v11.54h-2l-.3-2.65a4.17 4.17 0 0 1-1.56 2.2c-.74.53-1.64.8-2.55.76a4.92 4.92 0 0 1-4.3-2.04Zm17.13-6.44-4.9-15.01h3l3.5 11.23 3.4-11.23h3.01l-4.9 15.01v8.17h-3.01v-8.17h-.1Z" fill="#currentColor" />
-          </svg>
-        </a>
-      </div>
-      <div class="footer__wrapper-border">
-        <ul class="social-list footer__social-size-margin footer__border-bottom">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href="#">
-              <span class="visually-hidden">Мы в Вконтакте</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--youtube" href="#">
-              <span class="visually-hidden">Мы в Ютубе</span>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--tg" href="#">
-              <span class="visually-hidden">Мы в Телеграме</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright-wrapper footer__wrapper-border">
-        <a class="footer__copyright" href="#">
-          <span class="footer__copyright-text">HTML Academy</span>
-          <svg viewBox="0 0 27 35" width="27" height="35" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="m13.64.52-.14-.02-13.5 1.4v24.61l13.5 7.99 13.5-7.99v-24.6l-13.36-1.4Zm11.6 25-11.74 6.94-11.73-6.94v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83v-5.21l3.62-2.15v10.26Zm0-11.57-3.23 1.88-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19-11.62-6.87 11.63-6.96 11.8 6.83Zm0-1.22-11.8-6.92-11.67 6.91v-9.23l11.73-1.23 11.73 1.23v9.24Z" fill="#currentColor" />
-          </svg>
-        </a>
-      </div>
+    <div class="container">
+      <a class="footer__logo" href="#">
+        <img class="footer__logo-img" src="../source/images/footer-logo.svg" alt="logo" width="128" height="24">
+      </a>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="vissually-hidden">Мы в Вконтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="vissually-hidden">Мы в Ютубе</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="#">
+            <span class="vissually-hidden">Мы в Телеграме</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__copyright" href="#">
+        <span class="footer__copyright-text">HTML Academy</span>
+        <img class="footer__copyright-logo" src="../source/images/html-academy.svg" alt="HTML Academy logo" width="27" height="24">
+      </a>
     </div>
   </footer>
   <script src="scripts/index.js" defer></script>
