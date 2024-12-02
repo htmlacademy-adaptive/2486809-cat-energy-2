@@ -16,44 +16,32 @@
 <body class="page__body">
   <header class="main-header main-header--color">
     <div class="container">
-      <div class="main-header__container">
-        <a class="main-header__logo" href="index.html" aria-current="page">
-          <picture>
-            <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop.svg">
-            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/tablet/logo-tablet/logo-tablet.svg">
-            <img class="main-header__logo-image" src="images/mobile/logo-mobile/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-          </picture>
-          <picture>
-            <source media="(min-width: 1300px)" width="118" height="21" type="image/svg+xml" srcset="images/desktop/logo-desktop/logo-desktop-text.svg">
-            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/tablet/logo-tablet/logo-tablet-text.svg">
-            <img class="main-header__logo-text" src="images/mobile/logo-mobile/logo-mobile-text.svg" width="101" height="18" alt="Логотип Cat Energy текст">
-          </picture>
+      <nav class="navigation">
+        <a class="navigation__logo" href="#">
+          <img class="navigation__logo-image" src="../source/images/logo-mobile.svg" width="190" height="38" alt="Логотип Cat Energy">
         </a>
-        <nav class="main-header__nav  navigation">
-          <button class="main-header__burger" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="navigation__list navigation__list--no-js">
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--catalog" href="index.html">Главная</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--color-decor navigation__link--catalog" href="catalog.html" aria-current="page">Каталог продукции</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link navigation__link--catalog" href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <button class="navigation__toggle" type="button">
+          <span class="vissually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation-list">
+          <li class="navigation-list__item navigation-list__item--current">
+            <a class="navigation__link" href="#">Главная</a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation__link" href="#">Каталог продукции</a>
+          </li>
+          <li class="navigation-list__item">
+            <a class="navigation__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
   </header>
   <main class="main-container">
-    <section class="product-cards">
-      <div class="product-cards__container container">
-        <h1 class="product-cards__title section-title">Каталог продукции</h1>
-        <div class="product-cards__list">
+    <section class="catalog">
+      <div class="container">
+        <h2 class="catalog__title">Каталог продукции</h2>
+        <ul class="catalog-list">
           <!-- Курица 500грамм -->
           <article class="product-cards__item">
             <a class="product-cards__link product-cards__link-img" href="#">
@@ -251,13 +239,14 @@
             <a class="product-cards__button button" href="#">Заказать</a>
           </article>
           <!-- Показать еще -->
-          <div class="product-cards__item show-more">
-            <div class="show-more__plus"></div>
-            <h2 class="show-more__title">Показать еще 100500 товаров</h2>
-            <p class="show-more__description">На самом деле вкусов<br> гораздо больше!</p>
-            <a class="show-more__button button button--show_all" href="#">Показать все</a>
-          </div>
-        </div>
+          <li class="catalog-list__item">
+            <article class="card">
+              <h3 class="card__title">Показать еще <br>100500 товаров</h3>
+              <p class="card__title-desc">На самом деле вкусов гораздо больше!</p>
+              <button class="card__button button-accent" type="button">Показать все</button>
+            </article>
+          </li>
+        </ul>
       </div>
     </section>
     <!-- Дополнительные товары  -->
@@ -322,13 +311,19 @@
       </div>
     </section>
     <section class="invitation">
-      <div class="container invitation__wrap-address">
-        <h2 class="visually-hidden">Раздел с приглашениме для дилеров и адресом</h2>
-        <p class="invitation__title">Приглашаем <span class="span-wrap">к&nbsp;сотрудничеству</span> дилеров!</p>
-        <address class="invitation__address address">
-          <span class="address__street"><span class="span-wrap">ул. Большая</span> Конюшенная, д. 19/8</span>
-          <span class="address__city span-wrap">Санкт-Петербург</span>
-        </address>
+      <div class="container">
+        <h2 class="invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <div class="invitation__adress adress">
+          <p class="adress__street">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="adress__city">Санкт-Петербург</p>
+        </div>
+        <div class="map">
+          <picture>
+            <source width="1440" height="400" type="image/jpeg" media="(min-width: 1440px)" srcset="images/desktop/location-desktop@1x.png 1x, images/desktop/location-desktop@2x.png 2x">
+            <source width="768" height="400" type="image/jpeg" media="(min-width: 768px)" srcset="images/tablet/location-tablet@1x.png 1x, images/tablet/location-tablet@2x.png 2x">
+            <img class="map__img" src="../source/images/mobile/location-mobile@1x.png" alt="Карта офиса" width="768" height="400">
+          </picture>
+        </div>
       </div>
     </section>
   </main>
