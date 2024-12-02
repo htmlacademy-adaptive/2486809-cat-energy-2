@@ -22,4 +22,7 @@ body {
   color: $color-default-black;
   background-color: $color-default-white;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
